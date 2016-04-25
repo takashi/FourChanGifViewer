@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1619D0051CCE51560081CB49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1619D0041CCE51560081CB49 /* AppDelegate.swift */; };
+		1619D00A1CCE51560081CB49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1619D0081CCE51560081CB49 /* Main.storyboard */; };
+		1619D00C1CCE51560081CB49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1619D00B1CCE51560081CB49 /* Assets.xcassets */; };
+		1619D00F1CCE51560081CB49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1619D00D1CCE51560081CB49 /* LaunchScreen.storyboard */; };
+		1619D01A1CCE51560081CB49 /* FourChanGifViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1619D0191CCE51560081CB49 /* FourChanGifViewerTests.swift */; };
+		1619D0251CCE51560081CB49 /* FourChanGifViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1619D0241CCE51560081CB49 /* FourChanGifViewerUITests.swift */; };
+		1619D0331CCE51D50081CB49 /* ItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1619D0321CCE51D50081CB49 /* ItemTableViewController.swift */; };
+		1619D0381CCE53490081CB49 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1619D0361CCE53490081CB49 /* ItemTableViewCell.swift */; };
+		1619D0391CCE53490081CB49 /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1619D0371CCE53490081CB49 /* ItemTableViewCell.xib */; };
+		16C7458E1CCE84F300EF4A0A /* Thread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C7458D1CCE84F300EF4A0A /* Thread.swift */; };
+		16C745901CCEA04100EF4A0A /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C7458F1CCEA04100EF4A0A /* Post.swift */; };
+		16C745921CCF110B00EF4A0A /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16C745911CCF110B00EF4A0A /* APIKit.framework */; };
+		16C745931CCF110B00EF4A0A /* APIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 16C745911CCF110B00EF4A0A /* APIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		16C745951CCF111C00EF4A0A /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16C745941CCF111C00EF4A0A /* Result.framework */; };
+		16C745961CCF111C00EF4A0A /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 16C745941CCF111C00EF4A0A /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		16C745991CCF54B800EF4A0A /* FourChanRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C745981CCF54B800EF4A0A /* FourChanRequest.swift */; };
+		16EBD86F1CCE6DA400F3FF38 /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1619D03A1CCE57D50081CB49 /* Himotoki.framework */; };
+		16EBD8701CCE6DA400F3FF38 /* Himotoki.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1619D03A1CCE57D50081CB49 /* Himotoki.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1619D0161CCE51560081CB49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1619CFF91CCE51550081CB49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1619D0001CCE51550081CB49;
+			remoteInfo = FourChanGifViewer;
+		};
+		1619D0211CCE51560081CB49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1619CFF91CCE51550081CB49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1619D0001CCE51550081CB49;
+			remoteInfo = FourChanGifViewer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		16EBD8711CCE6DA400F3FF38 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				16C745961CCF111C00EF4A0A /* Result.framework in Embed Frameworks */,
+				16C745931CCF110B00EF4A0A /* APIKit.framework in Embed Frameworks */,
+				16EBD8701CCE6DA400F3FF38 /* Himotoki.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1619D0011CCE51560081CB49 /* FourChanGifViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FourChanGifViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1619D0041CCE51560081CB49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1619D0091CCE51560081CB49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1619D00B1CCE51560081CB49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1619D00E1CCE51560081CB49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1619D0101CCE51560081CB49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1619D0151CCE51560081CB49 /* FourChanGifViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FourChanGifViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1619D0191CCE51560081CB49 /* FourChanGifViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourChanGifViewerTests.swift; sourceTree = "<group>"; };
+		1619D01B1CCE51560081CB49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1619D0201CCE51560081CB49 /* FourChanGifViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FourChanGifViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1619D0241CCE51560081CB49 /* FourChanGifViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourChanGifViewerUITests.swift; sourceTree = "<group>"; };
+		1619D0261CCE51560081CB49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1619D0321CCE51D50081CB49 /* ItemTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemTableViewController.swift; path = ../ItemTableViewController.swift; sourceTree = "<group>"; };
+		1619D0361CCE53490081CB49 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		1619D0371CCE53490081CB49 /* ItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
+		1619D03A1CCE57D50081CB49 /* Himotoki.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Himotoki.framework; path = Carthage/Build/iOS/Himotoki.framework; sourceTree = "<group>"; };
+		16C7458D1CCE84F300EF4A0A /* Thread.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Thread.swift; sourceTree = "<group>"; };
+		16C7458F1CCEA04100EF4A0A /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		16C745911CCF110B00EF4A0A /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
+		16C745941CCF111C00EF4A0A /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		16C745981CCF54B800EF4A0A /* FourChanRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourChanRequest.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1619CFFE1CCE51550081CB49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16C745951CCF111C00EF4A0A /* Result.framework in Frameworks */,
+				16C745921CCF110B00EF4A0A /* APIKit.framework in Frameworks */,
+				16EBD86F1CCE6DA400F3FF38 /* Himotoki.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1619D0121CCE51560081CB49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1619D01D1CCE51560081CB49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1619CFF81CCE51550081CB49 = {
+			isa = PBXGroup;
+			children = (
+				16C745941CCF111C00EF4A0A /* Result.framework */,
+				16C745911CCF110B00EF4A0A /* APIKit.framework */,
+				1619D03A1CCE57D50081CB49 /* Himotoki.framework */,
+				1619D0031CCE51560081CB49 /* FourChanGifViewer */,
+				1619D0181CCE51560081CB49 /* FourChanGifViewerTests */,
+				1619D0231CCE51560081CB49 /* FourChanGifViewerUITests */,
+				1619D0021CCE51560081CB49 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1619D0021CCE51560081CB49 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1619D0011CCE51560081CB49 /* FourChanGifViewer.app */,
+				1619D0151CCE51560081CB49 /* FourChanGifViewerTests.xctest */,
+				1619D0201CCE51560081CB49 /* FourChanGifViewerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1619D0031CCE51560081CB49 /* FourChanGifViewer */ = {
+			isa = PBXGroup;
+			children = (
+				16C7458C1CCE83C900EF4A0A /* Models */,
+				1619D0351CCE531B0081CB49 /* Cells */,
+				1619D0341CCE53150081CB49 /* Views */,
+				1619D0041CCE51560081CB49 /* AppDelegate.swift */,
+				1619D0081CCE51560081CB49 /* Main.storyboard */,
+				1619D00B1CCE51560081CB49 /* Assets.xcassets */,
+				1619D00D1CCE51560081CB49 /* LaunchScreen.storyboard */,
+				1619D0101CCE51560081CB49 /* Info.plist */,
+				16C745981CCF54B800EF4A0A /* FourChanRequest.swift */,
+			);
+			path = FourChanGifViewer;
+			sourceTree = "<group>";
+		};
+		1619D0181CCE51560081CB49 /* FourChanGifViewerTests */ = {
+			isa = PBXGroup;
+			children = (
+				1619D0191CCE51560081CB49 /* FourChanGifViewerTests.swift */,
+				1619D01B1CCE51560081CB49 /* Info.plist */,
+			);
+			path = FourChanGifViewerTests;
+			sourceTree = "<group>";
+		};
+		1619D0231CCE51560081CB49 /* FourChanGifViewerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1619D0241CCE51560081CB49 /* FourChanGifViewerUITests.swift */,
+				1619D0261CCE51560081CB49 /* Info.plist */,
+			);
+			path = FourChanGifViewerUITests;
+			sourceTree = "<group>";
+		};
+		1619D0341CCE53150081CB49 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1619D0321CCE51D50081CB49 /* ItemTableViewController.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		1619D0351CCE531B0081CB49 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1619D0361CCE53490081CB49 /* ItemTableViewCell.swift */,
+				1619D0371CCE53490081CB49 /* ItemTableViewCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		16C7458C1CCE83C900EF4A0A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				16C7458D1CCE84F300EF4A0A /* Thread.swift */,
+				16C7458F1CCEA04100EF4A0A /* Post.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1619D0001CCE51550081CB49 /* FourChanGifViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1619D0291CCE51560081CB49 /* Build configuration list for PBXNativeTarget "FourChanGifViewer" */;
+			buildPhases = (
+				1619CFFD1CCE51550081CB49 /* Sources */,
+				1619CFFE1CCE51550081CB49 /* Frameworks */,
+				1619CFFF1CCE51550081CB49 /* Resources */,
+				16EBD8711CCE6DA400F3FF38 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FourChanGifViewer;
+			productName = FourChanGifViewer;
+			productReference = 1619D0011CCE51560081CB49 /* FourChanGifViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1619D0141CCE51560081CB49 /* FourChanGifViewerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1619D02C1CCE51560081CB49 /* Build configuration list for PBXNativeTarget "FourChanGifViewerTests" */;
+			buildPhases = (
+				1619D0111CCE51560081CB49 /* Sources */,
+				1619D0121CCE51560081CB49 /* Frameworks */,
+				1619D0131CCE51560081CB49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1619D0171CCE51560081CB49 /* PBXTargetDependency */,
+			);
+			name = FourChanGifViewerTests;
+			productName = FourChanGifViewerTests;
+			productReference = 1619D0151CCE51560081CB49 /* FourChanGifViewerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1619D01F1CCE51560081CB49 /* FourChanGifViewerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1619D02F1CCE51560081CB49 /* Build configuration list for PBXNativeTarget "FourChanGifViewerUITests" */;
+			buildPhases = (
+				1619D01C1CCE51560081CB49 /* Sources */,
+				1619D01D1CCE51560081CB49 /* Frameworks */,
+				1619D01E1CCE51560081CB49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1619D0221CCE51560081CB49 /* PBXTargetDependency */,
+			);
+			name = FourChanGifViewerUITests;
+			productName = FourChanGifViewerUITests;
+			productReference = 1619D0201CCE51560081CB49 /* FourChanGifViewerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1619CFF91CCE51550081CB49 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = takashi;
+				TargetAttributes = {
+					1619D0001CCE51550081CB49 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					1619D0141CCE51560081CB49 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 1619D0001CCE51550081CB49;
+					};
+					1619D01F1CCE51560081CB49 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 1619D0001CCE51550081CB49;
+					};
+				};
+			};
+			buildConfigurationList = 1619CFFC1CCE51550081CB49 /* Build configuration list for PBXProject "FourChanGifViewer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1619CFF81CCE51550081CB49;
+			productRefGroup = 1619D0021CCE51560081CB49 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1619D0001CCE51550081CB49 /* FourChanGifViewer */,
+				1619D0141CCE51560081CB49 /* FourChanGifViewerTests */,
+				1619D01F1CCE51560081CB49 /* FourChanGifViewerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1619CFFF1CCE51550081CB49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1619D0391CCE53490081CB49 /* ItemTableViewCell.xib in Resources */,
+				1619D00F1CCE51560081CB49 /* LaunchScreen.storyboard in Resources */,
+				1619D00C1CCE51560081CB49 /* Assets.xcassets in Resources */,
+				1619D00A1CCE51560081CB49 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1619D0131CCE51560081CB49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1619D01E1CCE51560081CB49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1619CFFD1CCE51550081CB49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1619D0331CCE51D50081CB49 /* ItemTableViewController.swift in Sources */,
+				1619D0381CCE53490081CB49 /* ItemTableViewCell.swift in Sources */,
+				1619D0051CCE51560081CB49 /* AppDelegate.swift in Sources */,
+				16C745991CCF54B800EF4A0A /* FourChanRequest.swift in Sources */,
+				16C7458E1CCE84F300EF4A0A /* Thread.swift in Sources */,
+				16C745901CCEA04100EF4A0A /* Post.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1619D0111CCE51560081CB49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1619D01A1CCE51560081CB49 /* FourChanGifViewerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1619D01C1CCE51560081CB49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1619D0251CCE51560081CB49 /* FourChanGifViewerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1619D0171CCE51560081CB49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1619D0001CCE51550081CB49 /* FourChanGifViewer */;
+			targetProxy = 1619D0161CCE51560081CB49 /* PBXContainerItemProxy */;
+		};
+		1619D0221CCE51560081CB49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1619D0001CCE51550081CB49 /* FourChanGifViewer */;
+			targetProxy = 1619D0211CCE51560081CB49 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1619D0081CCE51560081CB49 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1619D0091CCE51560081CB49 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1619D00D1CCE51560081CB49 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1619D00E1CCE51560081CB49 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1619D0271CCE51560081CB49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1619D0281CCE51560081CB49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1619D02A1CCE51560081CB49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = FourChanGifViewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.takashi.FourChanGifViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1619D02B1CCE51560081CB49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = FourChanGifViewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.takashi.FourChanGifViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1619D02D1CCE51560081CB49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FourChanGifViewerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.takashi.FourChanGifViewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FourChanGifViewer.app/FourChanGifViewer";
+			};
+			name = Debug;
+		};
+		1619D02E1CCE51560081CB49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FourChanGifViewerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.takashi.FourChanGifViewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FourChanGifViewer.app/FourChanGifViewer";
+			};
+			name = Release;
+		};
+		1619D0301CCE51560081CB49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FourChanGifViewerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.takashi.FourChanGifViewerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FourChanGifViewer;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		1619D0311CCE51560081CB49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FourChanGifViewerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.takashi.FourChanGifViewerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FourChanGifViewer;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1619CFFC1CCE51550081CB49 /* Build configuration list for PBXProject "FourChanGifViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1619D0271CCE51560081CB49 /* Debug */,
+				1619D0281CCE51560081CB49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1619D0291CCE51560081CB49 /* Build configuration list for PBXNativeTarget "FourChanGifViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1619D02A1CCE51560081CB49 /* Debug */,
+				1619D02B1CCE51560081CB49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1619D02C1CCE51560081CB49 /* Build configuration list for PBXNativeTarget "FourChanGifViewerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1619D02D1CCE51560081CB49 /* Debug */,
+				1619D02E1CCE51560081CB49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1619D02F1CCE51560081CB49 /* Build configuration list for PBXNativeTarget "FourChanGifViewerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1619D0301CCE51560081CB49 /* Debug */,
+				1619D0311CCE51560081CB49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1619CFF91CCE51550081CB49 /* Project object */;
+}
