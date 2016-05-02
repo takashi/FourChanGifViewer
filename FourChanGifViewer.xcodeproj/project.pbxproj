@@ -13,9 +13,10 @@
 		1619D00F1CCE51560081CB49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1619D00D1CCE51560081CB49 /* LaunchScreen.storyboard */; };
 		1619D01A1CCE51560081CB49 /* FourChanGifViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1619D0191CCE51560081CB49 /* FourChanGifViewerTests.swift */; };
 		1619D0251CCE51560081CB49 /* FourChanGifViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1619D0241CCE51560081CB49 /* FourChanGifViewerUITests.swift */; };
-		1619D0331CCE51D50081CB49 /* ItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1619D0321CCE51D50081CB49 /* ItemTableViewController.swift */; };
-		1619D0381CCE53490081CB49 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1619D0361CCE53490081CB49 /* ItemTableViewCell.swift */; };
-		1619D0391CCE53490081CB49 /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1619D0371CCE53490081CB49 /* ItemTableViewCell.xib */; };
+		1619D0331CCE51D50081CB49 /* ThreadTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1619D0321CCE51D50081CB49 /* ThreadTableViewController.swift */; };
+		1619D0381CCE53490081CB49 /* ThreadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1619D0361CCE53490081CB49 /* ThreadTableViewCell.swift */; };
+		1619D0391CCE53490081CB49 /* ThreadTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1619D0371CCE53490081CB49 /* ThreadTableViewCell.xib */; };
+		16AF57A21CD12AC30077A099 /* ThreadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AF57A11CD12AC30077A099 /* ThreadViewController.swift */; };
 		16C7458E1CCE84F300EF4A0A /* Thread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C7458D1CCE84F300EF4A0A /* Thread.swift */; };
 		16C745901CCEA04100EF4A0A /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C7458F1CCEA04100EF4A0A /* Post.swift */; };
 		16C745921CCF110B00EF4A0A /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16C745911CCF110B00EF4A0A /* APIKit.framework */; };
@@ -73,10 +74,11 @@
 		1619D0201CCE51560081CB49 /* FourChanGifViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FourChanGifViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1619D0241CCE51560081CB49 /* FourChanGifViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourChanGifViewerUITests.swift; sourceTree = "<group>"; };
 		1619D0261CCE51560081CB49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1619D0321CCE51D50081CB49 /* ItemTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemTableViewController.swift; path = ../ItemTableViewController.swift; sourceTree = "<group>"; };
-		1619D0361CCE53490081CB49 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
-		1619D0371CCE53490081CB49 /* ItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
+		1619D0321CCE51D50081CB49 /* ThreadTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThreadTableViewController.swift; path = ../ThreadTableViewController.swift; sourceTree = "<group>"; };
+		1619D0361CCE53490081CB49 /* ThreadTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadTableViewCell.swift; sourceTree = "<group>"; };
+		1619D0371CCE53490081CB49 /* ThreadTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThreadTableViewCell.xib; sourceTree = "<group>"; };
 		1619D03A1CCE57D50081CB49 /* Himotoki.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Himotoki.framework; path = Carthage/Build/iOS/Himotoki.framework; sourceTree = "<group>"; };
+		16AF57A11CD12AC30077A099 /* ThreadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadViewController.swift; sourceTree = "<group>"; };
 		16C7458D1CCE84F300EF4A0A /* Thread.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Thread.swift; sourceTree = "<group>"; };
 		16C7458F1CCEA04100EF4A0A /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		16C745911CCF110B00EF4A0A /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
@@ -172,7 +174,8 @@
 		1619D0341CCE53150081CB49 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				1619D0321CCE51D50081CB49 /* ItemTableViewController.swift */,
+				1619D0321CCE51D50081CB49 /* ThreadTableViewController.swift */,
+				16AF57A11CD12AC30077A099 /* ThreadViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -180,8 +183,8 @@
 		1619D0351CCE531B0081CB49 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				1619D0361CCE53490081CB49 /* ItemTableViewCell.swift */,
-				1619D0371CCE53490081CB49 /* ItemTableViewCell.xib */,
+				1619D0361CCE53490081CB49 /* ThreadTableViewCell.swift */,
+				1619D0371CCE53490081CB49 /* ThreadTableViewCell.xib */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -300,7 +303,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1619D0391CCE53490081CB49 /* ItemTableViewCell.xib in Resources */,
+				1619D0391CCE53490081CB49 /* ThreadTableViewCell.xib in Resources */,
 				1619D00F1CCE51560081CB49 /* LaunchScreen.storyboard in Resources */,
 				1619D00C1CCE51560081CB49 /* Assets.xcassets in Resources */,
 				1619D00A1CCE51560081CB49 /* Main.storyboard in Resources */,
@@ -328,9 +331,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1619D0331CCE51D50081CB49 /* ItemTableViewController.swift in Sources */,
-				1619D0381CCE53490081CB49 /* ItemTableViewCell.swift in Sources */,
+				1619D0331CCE51D50081CB49 /* ThreadTableViewController.swift in Sources */,
+				1619D0381CCE53490081CB49 /* ThreadTableViewCell.swift in Sources */,
 				1619D0051CCE51560081CB49 /* AppDelegate.swift in Sources */,
+				16AF57A21CD12AC30077A099 /* ThreadViewController.swift in Sources */,
 				16C745991CCF54B800EF4A0A /* FourChanRequest.swift in Sources */,
 				16C7458E1CCE84F300EF4A0A /* Thread.swift in Sources */,
 				16C745901CCEA04100EF4A0A /* Post.swift in Sources */,

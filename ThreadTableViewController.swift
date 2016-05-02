@@ -10,7 +10,7 @@ import UIKit
 
 import APIKit
 
-class ItemTableViewController: UITableViewController {
+class ThreadTableViewController: UITableViewController {
     var threads: Threads = Threads(page: 0, threads: [])
 
     override func viewWillAppear(animated: Bool) {
@@ -32,7 +32,7 @@ class ItemTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.registerNib(UINib(nibName: "ItemTableViewCell", bundle: nil), forCellReuseIdentifier: "ItemTableViewCell")
+        tableView.registerNib(UINib(nibName: "ThreadTableViewCell", bundle: nil), forCellReuseIdentifier: "ThreadTableViewCell")        
     }
 
     override func didReceiveMemoryWarning() {
@@ -48,12 +48,21 @@ class ItemTableViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCellWithIdentifier("ItemTableViewCell", forIndexPath: indexPath) as? ItemTableViewCell else {
+        guard let cell = tableView.dequeueReusableCellWithIdentifier("ThreadTableViewCell", forIndexPath: indexPath) as? ThreadTableViewCell else {
             fatalError()
         }
         
         cell.name.text = String(threads.threads[indexPath.row].no!)
 
         return cell
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        performSegueWithIdentifier("ShowThreadViewController", sender: nil)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let threadViewController = segue.destinationViewController as! ThreadViewController
+        threadViewController.no = threads.threads[tableView.indexPathForSelectedRow!.row].no!
     }
 }
