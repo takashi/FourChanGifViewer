@@ -41,7 +41,7 @@ struct FourChanThreadRequest : FourChanRequest {
     }
     
     var path: String {
-        return "/thread/\(id)"
+        return "/thread/\(id).json"
     }
 }
 
