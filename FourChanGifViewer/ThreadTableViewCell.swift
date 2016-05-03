@@ -1,5 +1,5 @@
 //
-//  ItemTableViewCell.swift
+//  ThreadTableViewCell.swift
 //  FourChanGifViewer
 //
 //  Created by takashi on 2016/04/25.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ItemTableViewCell: UITableViewCell {
+class ThreadTableViewCell: UITableViewCell {
     @IBOutlet weak var name: UILabel!
     
     override func awakeFromNib() {
